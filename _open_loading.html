@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8">
+    <title>00-PC-Opening/1-Loading_page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="style.css?v=1654662618">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/resloader.js?v=1654662618"></script>
+    <script src="js/app.js?v=1654662618"></script>
+</head>
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/background-4-1.png" uk-img>
+    <div class="uk-height-viewport opening uk-position-relative">
+        <div class="uk-position-bottom-center opening__progressbar uk-border-pill">
+            <div class="opening__progressbar__value uk-position-cover uk-border-pill" style="width: 0 !important;">
+                <div class="opening__progressbar__current uk-position-center-right-out uk-cover-container uk-border-circle uk-flex-inline">
+                    <canvas width="82" height="82"></canvas>
+                    <div class="uk-position-cover opening__progressbar__img"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        const imgData = [{
+            name: 'image1',
+            url: 'https://picsum.photos/200/300/?random'
+        }, {
+            name: 'image2',
+            url: 'https://picsum.photos/1200/300/?random'
+        }, {
+            name: 'image3',
+            url: 'https://picsum.photos/800/300/?random'
+        }, {
+            name: 'image4',
+            url: 'https://picsum.photos/400/300/?random'
+        }, {
+            name: 'image5',
+            url: 'https://picsum.photos/900/300/?random'
+        }, {
+            name: 'image6',
+            url: 'https://picsum.photos/600/300/?random'
+        }];
+
+        const options = {
+            resources: imgData, //resources expected a JSON or Array
+            onStart: function (total) {
+                console.log('onStart:' + total);
+                // document.querySelector(".status > span").innerHTML = 'onStart';
+                // $("body").addClass("uk-overflow-hidden");
+            },
+            onProgress: function (currentIndex, total) {
+                console.log('onProgress:' + currentIndex + '/' + total);
+                // document.querySelector(".status > span").innerHTML = 'onProgress';
+                // document.querySelector(".division > span").innerHTML = currentIndex + '/' + total;
+                // document.querySelector(".percent > span").innerHTML = Math.floor((currentIndex / total) * 100) + '%';
+                document.querySelector(".opening__progressbar__value").style.width = Math.floor((currentIndex / total) * 100) + '%';
+                console.log(Math.floor((currentIndex / total) * 100));
+            },
+            onComplete: function (total, result) {
+                console.log('onComplete:' + total);
+                console.log(result);
+                // $("body").removeClass("uk-overflow-hidden");
+                // setTimeout(function () {
+                //     $(".loadpage").animate({ height: 0, opacity: 0.5 }, 'slow');
+                // },400);
+                // document.querySelector(".status > span").innerHTML = 'onComplete';
+            }
+        };
+
+        resloader(options)
+    </script>
+</div>
+<!--/app-->
+</body>
+</html>
