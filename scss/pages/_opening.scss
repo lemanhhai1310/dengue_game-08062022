@@ -1,7 +1,10 @@
 .opening{
   backdrop-filter: blur(3px);
   &__progressbar{
-    max-width: 642px;
+    max-width: 465px;
+    @include media-breakpoint-up('m'){
+      max-width: 642px;
+    }
     width: 100%;
     height: 25px;
     background: #5B0D11;
@@ -21,21 +24,28 @@
     }
   }
   &__logo{
+    &__img{
+      @include fluidx(1104px,445px,width);
+    }
     &__box{
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 88px;
       background: #000000;
-      padding: 0 55px;
+      min-height: 45px;
+      padding: 0 16px;
+      @include media-breakpoint-up('m'){
+        min-height: 88px;
+        padding: 0 55px;
+      }
       span{
         color: #EF1C26;
-        @extend .fz-52;
+        @include fluidx(52px,24px,font-size);
+        @include fluidx(15px,7px,top);
         font-style: italic;
         font-family: $font-Gotham-Medium;
         line-height: calc(50/52);
         position: relative;
-        top: 15px;
       }
     }
   }

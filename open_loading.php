@@ -1,7 +1,15 @@
 <?php $data["title"] = "00-PC-Opening/1-Loading_page"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
-<div class="uk-height-viewport opening uk-position-relative">
+<div class="uk-height-viewport opening uk-position-relative uk-flex uk-flex-middle">
+    <div class="uk-width-1-1 uk-section-small opening__logo">
+        <div class="uk-container uk-text-center">
+            <div class="uk-position-relative">
+                <img class="opening__logo__img" src="images/logo31.png" alt="">
+                <div class="uk-position-bottom-center opening__logo__box uk-border-pill"><span>#jomhalaudenggi</span></div>
+            </div>
+        </div>
+    </div>
     <div class="uk-position-bottom-center opening__progressbar uk-border-pill">
         <div class="opening__progressbar__value uk-position-cover uk-border-pill" style="width: 0 !important;">
             <div class="opening__progressbar__current uk-position-center-right-out uk-cover-container uk-border-circle uk-flex-inline">
@@ -24,12 +32,6 @@
     }, {
         name:'image4',
         url:'https://picsum.photos/400/300/?random'
-    }, {
-        name:'image5',
-        url:'https://picsum.photos/900/300/?random'
-    }, {
-        name:'image6',
-        url:'https://picsum.photos/600/300/?random'
     }];
 
     const options = {
@@ -38,6 +40,7 @@
             console.log('onStart:' + total);
             // document.querySelector(".status > span").innerHTML = 'onStart';
             // $("body").addClass("uk-overflow-hidden");
+            $('.opening__logo').hide();
         },
         onProgress: function(currentIndex, total) {
             console.log('onProgress:' + currentIndex + '/' + total);
@@ -50,6 +53,8 @@
         onComplete: function(total,result) {
             console.log('onComplete:' + total);
             console.log(result);
+            $('.opening__progressbar').hide();
+            $('.opening__logo').show();
             // $("body").removeClass("uk-overflow-hidden");
             // setTimeout(function () {
             //     $(".loadpage").animate({ height: 0, opacity: 0.5 }, 'slow');

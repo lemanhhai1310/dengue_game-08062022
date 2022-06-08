@@ -5,7 +5,7 @@
     <div class="uk-width-1-1 uk-section-small">
         <div class="uk-container uk-text-center">
             <div class="uk-position-relative">
-                <img src="images/logo31.png" alt="">
+                <img class="opening__logo__img" src="images/logo31.png" alt="">
                 <div class="uk-position-bottom-center opening__logo__box uk-border-pill"><span>#jomhalaudenggi</span></div>
             </div>
         </div>
