@@ -6,7 +6,7 @@
 @font-face{
   font-family:'TrashHand Regular';
   font-display: auto;
-  src:local('TrashHand Regular'), url('fonts/TrashHand.TTF') format('truetype');
+  src:local('TrashHand Regular'), url('fonts/TrashHand2.TTF') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
@@ -16,9 +16,9 @@
  * --------------------------------------------------------------------
  */
 @font-face{
-  font-family:'Gotham Regular';
+  font-family:'Gotham Black';
   font-display: auto;
-  src:local('Gotham Regular'), url('fonts/Gotham-Font/Gotham-Regular.otf') format('truetype');
+  src:local('Gotham Black'), url('fonts/Gotham-Font/Gotham-Black.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
@@ -30,9 +30,44 @@
   font-style:normal;
 }
 @font-face{
+  font-family:'Gotham Book';
+  font-display: auto;
+  src:local('Gotham Book'), url('fonts/Gotham-Font/GothamBook.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Gotham Book Italic';
+  font-display: auto;
+  src:local('Gotham Book Italic'), url('fonts/Gotham-Font/GothamBookItalic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Gotham Light';
+  font-display: auto;
+  src:local('Gotham Light'), url('fonts/Gotham-Font/Gotham-Light.otf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
   font-family:'Gotham Medium';
   font-display: auto;
   src:local('Gotham Medium'), url('fonts/Gotham-Font/GothamMedium.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Gotham Medium Italic';
+  font-display: auto;
+  src:local('Gotham Medium Italic'), url('fonts/Gotham-Font/GothamMediumItalic.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+}
+@font-face{
+  font-family:'Gotham Regular';
+  font-display: auto;
+  src:local('Gotham Regular'), url('fonts/Gotham-Font/Gotham-Regular.otf') format('truetype');
   font-weight:normal;
   font-style:normal;
 }
