@@ -21,7 +21,7 @@
 </div>
 <!-- Enter_game_alias -->
 <div id="modal-enter-game" class="uk-flex-top" uk-modal>
-    <div data-src="images/Board.png" uk-img class="opening__modal__body uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-flex uk-flex-bottom">
+    <div class="opening__modal__body uk-modal-dialog uk-modal-body uk-margin-auto-vertical uk-flex uk-flex-bottom">
         <div class="uk-width-1-1">
             <div class="item__10">
                 <h2 class="uk-modal-title opening__modal__title">ENTER YOUR NAME</h2>
