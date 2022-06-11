@@ -2,7 +2,7 @@
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-height-viewport opening uk-position-relative uk-flex uk-flex-middle">
-    <div class="uk-width-1-1 uk-section-small opening__logo">
+    <div class="uk-width-1-1 uk-section-small opening__logo" uk-scrollspy="cls: uk-animation-scale-down; repeat: true">
         <div class="uk-container uk-text-center">
             <div class="uk-position-relative">
                 <img class="opening__logo__img" src="images/logo31.png" alt="">

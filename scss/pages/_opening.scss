@@ -52,16 +52,22 @@
       font-family: $font-TrashHand;
       @extend .fz-50;
       line-height: 1;
+      @include media-breakpoint-down('s'){
+        font-size: 44px !important;
+      }
     }
     &__input{
       @extend .fz-28;
       font-family: $font-Gotham-Light;
       background: #EBE5D5;
-      //box-shadow: 0px 4px 2px #F8F6F1, inset 0px 2px 2px rgba(0, 0, 0, 0.25);
-      border-radius: 15px;
+      border-radius: 10px;
       height: 59px;
       @include media-breakpoint-up('m'){
         height: 91px;
+        border-radius: 15px;
+      }
+      @include media-breakpoint-down('s'){
+        font-size: 19px !important;
       }
       text-align: center;
     }
@@ -85,7 +91,13 @@
         @extend .fz-30;
         font-family: $font-Gotham-Medium;
         position: relative;
-        top: 10px;
+        top: 6px;
+        @include media-breakpoint-up('m'){
+          top: 10px;
+        }
+        @include media-breakpoint-down('s'){
+          font-size: 19px !important;
+        }
       }
       &--cancel{
         background-image: url("images/00-Mobile-Opening/01-Molecule/Bg.png");
@@ -103,7 +115,7 @@
   }
   &__logo{
     &__img{
-      @include fluidx(1104px,445px,width);
+      @include fluidx(1104px,445px,width,'l','m');
     }
     &__box{
       display: flex;
@@ -116,6 +128,9 @@
         min-height: 88px;
         padding: 0 55px;
       }
+      @include media-breakpoint-down('s'){
+        bottom: -21px;
+      }
       span{
         color: #EF1C26;
         @include fluidx(52px,24px,font-size);
@@ -125,6 +140,95 @@
         font-family: $font-Gotham-Medium;
         line-height: calc(50/52);
         position: relative;
+      }
+    }
+  }
+  &__navbar{
+    .uk-navbar-item{
+      min-height: 104px;
+      @include media-breakpoint-up('m'){
+        min-height: 175px;
+        $x:36px;
+        padding-left: #{$x};
+        padding-right: #{$x};
+      }
+    }
+    &__boxIcon{
+      background-repeat: no-repeat;
+      background-size: 100%;
+      $x:48px;
+      width: #{$x};
+      height: #{$x};
+      display: flex;
+      @include media-breakpoint-up('m'){
+        $x:75px;
+        width: #{$x};
+        height: #{$x};
+      }
+    }
+  }
+  &__copyright{
+    &__section{
+      @include media-breakpoint-down('s'){
+        $x:10px;
+        padding-top: #{$x};
+        padding-bottom: #{$x};
+      }
+    }
+    &__img{
+      width: 942px;
+      @include media-breakpoint-down('s'){
+        width: 392px;
+      }
+    }
+    &__item{
+      &:nth-child(n+2){
+        @include media-breakpoint-up('m'){
+          margin-top: 80px;
+        }
+      }
+    }
+    @include media-breakpoint-down('s'){
+      $x:20px;
+      padding-top: #{$x};
+      padding-bottom: #{$x};
+    }
+    &__txt{
+      color: #E2BCA8;
+      @extend .fz-21;
+      font-family: $font-Gotham-Book;
+      line-height: (25/21);
+      @include media-breakpoint-down('s'){
+        font-size: 14px !important;
+      }
+    }
+    &__txt1{
+      color: #FFFFFF;
+      @extend .fz-25;
+      font-family: $font-Gotham-Medium;
+      line-height: (30/25);
+      @include media-breakpoint-down('s'){
+        font-size: 16px !important;
+        line-height: (19/16);
+      }
+    }
+    &__btn{
+      @extend .fz-38;
+      font-family: $font-Gotham-Bold;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      color: #FFFFFF;
+      border-color: transparent !important;
+      width: 314px;
+      $x:90px;
+      line-height: calc(#{$x} - 2px);
+      background-image: url("images/00-PC-Opening/00-Atom/Bg.png");
+      @include media-breakpoint-down('s'){
+        $x:56px;
+        line-height: calc(#{$x} - 2px);
+        width: 156px;
+        background-image: url("images/mobile/00-Mobile-Opening/01-Molecule/Bg.png");
+        font-size: 21px !important;
       }
     }
   }
