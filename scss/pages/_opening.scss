@@ -154,6 +154,8 @@
       }
     }
     &__boxIcon{
+      position: relative;
+      z-index: 11;
       background-repeat: no-repeat;
       background-size: 100%;
       $x:48px;

@@ -1,0 +1,166 @@
+.system{
+  &__modal{
+    &__body{
+      display: flex;
+      @include media-breakpoint-up('l'){
+        $x:70px;
+        padding: calc(#{$x} - 0px) calc(#{$x} - 5px);
+      }
+    }
+    &__dialog{
+      background-size: contain;
+      background-color: transparent;
+      width: 709px;
+      min-height: 318px;
+      background-image: url("images/01-Mobile-System/00-Atom/Board.png");
+      @include media-breakpoint-up('l'){
+        width: 1204px;
+        min-height: 689px;
+        background-image: url("images/01-PC-System/00-Atom/Board.png");
+      }
+    }
+    &__close{
+      background-size: contain;
+      $x:53px;
+      $y:calc((0px - #{$x} + 25px)/2);
+      top: #{$y};
+      right: #{$y};
+      width: 56px;
+      height: 53px;
+      background-image: url("images/01-Mobile-System/01-Molecule/Round_BTN.png");
+      @include media-breakpoint-up('l'){
+        $x:105px;
+        width: 108px;
+        height: 105px;
+        background-image: url("images/01-PC-System/01-Molecule/Round_BTN.png");
+        $y:calc((0px - #{$x} + 60px)/2);
+        top: #{$y};
+        right: #{$y};
+      }
+      svg{
+        opacity: 0;
+      }
+    }
+    &__tabBtn{
+      color: #FFFFFF !important;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-color: transparent !important;
+      text-transform: initial;
+      font-family: $font-Gotham-Bold;
+      padding: 0;
+      $x:57px;
+      width: 148px;
+      line-height: calc(#{$x} - 2px);
+      @extend .fz-28;
+      @include media-breakpoint-down('m'){
+        font-size: 19px !important;
+      }
+      background-image: url("images/01-Mobile-System/01-Molecule/Bg1.png");
+      &.uk-active{
+        background-image: url("images/01-Mobile-System/01-Molecule/Bg.png");
+      }
+      @include media-breakpoint-up('l'){
+        $x:95px;
+        width: 238px;
+        line-height: calc(#{$x} - 2px);
+        background-image: url("images/01-PC-System/button-inactive.png");
+        &.uk-active{
+          background-image: url("images/01-PC-System/00-Atom.png");
+        }
+      }
+    }
+    &__slidenav{
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 32px;
+      height: 32px;
+      @include media-breakpoint-up('l'){
+        width: 60px;
+        height: 60px;
+      }
+      svg{
+        opacity: 0;
+      }
+      &--next{
+        @include media-breakpoint-up('l'){
+          background-image: url("data:image/svg+xml,%3Csvg width='39' height='46' viewBox='0 0 39 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_diii_6003_2569)'%3E%3Cpath d='M36 27.1961C40 24.8867 40 19.1132 36 16.8038L8.99999 1.21538C4.99999 -1.09401 -5.43477e-06 1.79274 -5.63666e-06 6.41154L-6.99945e-06 37.5885C-7.20134e-06 42.2073 4.99999 45.094 8.99999 42.7846L36 27.1961Z' fill='%23B2CDD2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_diii_6003_2569' x='0' y='-4.59741' width='39' height='50.1948' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_6003_2569'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_6003_2569' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='8'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.776471 0 0 0 0 0.882353 0 0 0 0 0.901961 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect2_innerShadow_6003_2569'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='-10'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.466667 0 0 0 0 0.572549 0 0 0 0 0.592157 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='effect2_innerShadow_6003_2569' result='effect3_innerShadow_6003_2569'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='-6'/%3E%3CfeGaussianBlur stdDeviation='2.5'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.776471 0 0 0 0 0.882353 0 0 0 0 0.901961 0 0 0 0.4 0'/%3E%3CfeBlend mode='normal' in2='effect3_innerShadow_6003_2569' result='effect4_innerShadow_6003_2569'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+      }
+      &--prev{
+        @include media-breakpoint-up('l'){
+          background-image: url("data:image/svg+xml,%3Csvg width='39' height='46' viewBox='0 0 39 46' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_diii_6003_2548)'%3E%3Cpath d='M3 27.1961C-1 24.8867 -0.999999 19.1132 3 16.8038L30 1.21538C34 -1.09401 39 1.79274 39 6.41154L39 37.5885C39 42.2073 34 45.094 30 42.7846L3 27.1961Z' fill='%23B2CDD2'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_diii_6003_2548' x='0' y='-4.59741' width='39' height='50.1948' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='2'/%3E%3CfeComposite in2='hardAlpha' operator='out'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.4 0'/%3E%3CfeBlend mode='normal' in2='BackgroundImageFix' result='effect1_dropShadow_6003_2548'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='effect1_dropShadow_6003_2548' result='shape'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='8'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.776471 0 0 0 0 0.882353 0 0 0 0 0.901961 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='shape' result='effect2_innerShadow_6003_2548'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='-10'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.466667 0 0 0 0 0.572549 0 0 0 0 0.592157 0 0 0 1 0'/%3E%3CfeBlend mode='normal' in2='effect2_innerShadow_6003_2548' result='effect3_innerShadow_6003_2548'/%3E%3CfeColorMatrix in='SourceAlpha' type='matrix' values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0' result='hardAlpha'/%3E%3CfeOffset dy='-6'/%3E%3CfeGaussianBlur stdDeviation='2.5'/%3E%3CfeComposite in2='hardAlpha' operator='arithmetic' k2='-1' k3='1'/%3E%3CfeColorMatrix type='matrix' values='0 0 0 0 0.776471 0 0 0 0 0.882353 0 0 0 0 0.901961 0 0 0 0.4 0'/%3E%3CfeBlend mode='normal' in2='effect3_innerShadow_6003_2548' result='effect4_innerShadow_6003_2548'/%3E%3C/filter%3E%3C/defs%3E%3C/svg%3E%0A");
+        }
+      }
+    }
+    &__dotnav{
+      >li{
+        >a{
+          $x:12px;
+          width: #{$x};
+          height: #{$x};
+          background: #D6C495;
+          border-color: #D6C495;
+        }
+        &.uk-active{
+          >a{
+            background: #987413;
+            border-color: #987413;
+          }
+        }
+      }
+    }
+    &__intro{
+      &__title{
+        margin: 0;
+        margin-bottom: 6px;
+        @extend .fz-64;
+        text-transform: uppercase;
+        color: #C12675;
+        font-family: $font-TrashHand;
+        line-height: (68/64);
+        @include media-breakpoint-down('m'){
+          font-size: 44px !important;
+          margin-bottom: 8px !important;
+        }
+      }
+      &__desc{
+        font-family: $font-Gotham-Medium;
+        letter-spacing: -0.02em;
+        color: #4D4949;
+        line-height: 1.4;
+        @extend .fz-24;
+        @include media-breakpoint-down('m'){
+          font-size: 14px !important;
+        }
+      }
+      &__img1{
+        @include fluidx(405px,160px,width,'l','m');
+      }
+      &__img2{
+        @include fluidx(346px,138px,width,'l','m');
+      }
+    }
+    &__switcher{
+      padding: 20px;
+      $x:57px;
+      padding-top: calc(#{$x} - 15px);
+      margin-top: calc((0px - #{$x})/2);
+      background: #F0EDE3;
+      border-radius: 28px;
+      @include media-breakpoint-up('l'){
+        padding: 40px;
+        $x:95px;
+        padding-top: calc(#{$x} - 20px);
+        margin-top: calc((0px - #{$x})/2);
+        background: #EBE5D5;
+        box-shadow: 0px 4px 2px #F8F6F1, inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 40px;
+      }
+      >*{
+        width: 100%;
+      }
+    }
+  }
+}

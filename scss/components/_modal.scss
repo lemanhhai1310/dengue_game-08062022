@@ -9,5 +9,12 @@
       background: rgba(0, 0, 0, 0.6);
       padding: 50px 30px;
     }
+    &-close{
+      &-default{
+        @include media-breakpoint-up('l'){
+
+        }
+      }
+    }
   }
 }
