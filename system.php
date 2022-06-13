@@ -29,7 +29,7 @@
 
             <ul class="system__modal__switcher uk-switcher uk-flex-auto uk-background-muted uk-flex uk-flex-middle">
                 <li>
-                    <div uk-slider>
+                    <div uk-slider="finite: true">
 
                         <div class="uk-position-relative">
 
