@@ -22,7 +22,7 @@
         <div class="uk-width-1-1 uk-flex-auto uk-flex uk-flex-column">
             <div class="uk-text-center uk-position-relative uk-position-z-index" uk-switcher="animation: uk-animation-fade; toggle: > *">
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Introduction</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Weapons</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Weapons</button>
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Mozzies</button>
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Settings</button>
             </div>
@@ -44,7 +44,7 @@
                                                     <div class="system__modal__intro__desc">The Aedes mosquito which spreads the dengue virus lives both indoors and outdoors near people!</div>
                                                 </div>
                                                 <div class="uk-width-auto">
-                                                    <img class="system__modal__intro__img1" src="images/01-PC-System/Group90.png" alt="">
+                                                    <img class="system__modal__intro__img1" src="images/name-dengue-red.png" alt="">
                                                 </div>
                                             </div>
                                         <?php else: ?>
@@ -54,7 +54,7 @@
                                                     <div class="system__modal__intro__desc">Justeen is being attacked by a swarm of Aedes mosquitoes at our office pantry.  Go there and save him NOW before he gets Dengue Fever and needs to be hospitalized.</div>
                                                 </div>
                                                 <div class="uk-width-auto">
-                                                    <img class="system__modal__intro__img2" src="images/01-PC-System/Group91.png" alt="">
+                                                    <img class="system__modal__intro__img2" src="images/name-dengue-man.png" alt="">
                                                 </div>
                                             </div>
                                         <?php endif; ?>
@@ -79,7 +79,76 @@
 
                     </div>
                 </li>
-                <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li>
+                    <div uk-slider="finite: true;sets: true">
+
+                        <div class="uk-position-relative">
+
+                            <div class="uk-slider-container">
+                                <ul class="uk-slider-items uk-child-width-1-1 uk-grid" uk-grid>
+                                    <?php
+                                    $data = array(
+                                        array(
+                                            'src' => 'images/tab=Weapons,name=hand.png',
+                                            'title' => 'A giant pair of hands',
+                                            'desc' => 'Use the hands to smack and kill all mosquitoes within X radius.',
+                                        ),
+                                        array(
+                                            'src' => 'images/tab=Weapons,name=spray.png',
+                                            'title' => 'A can of Insect Spray',
+                                            'desc' => 'Slow the mosquitoes in their tracks and get rid of the pesky little ones',
+                                        ),
+                                        array(
+                                            'src' => 'images/tab=Weapons,name=incense.png',
+                                            'title' => 'Insect Repellent Incense',
+                                            'desc' => 'Smoke and confuse the mosquitoes and get rid of the pesky little ones',
+                                        ),
+                                        array(
+                                            'src' => 'images/tab=Weapons,name=racket.png',
+                                            'title' => 'Insect Racket',
+                                            'desc' => 'Swipe to kill all the mosquitoes in the area. Bonus: You can do this 3 times.',
+                                        ),
+                                        array(
+                                            'src' => 'images/tab=Weapons,name=potion.png',
+                                            'title' => 'Invincible Potion',
+                                            'desc' => 'One shot protects you from the mosquitoes for 10 sec while you wreak havoc on them.
+Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FULL PROTECTION.',
+                                        ),
+                                    );
+                                    foreach ($data as $k=>$v): ?>
+                                        <li class="<?= ($k<=3)?'uk-width-1-3':'uk-width-2-3' ?>">
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__boximg">
+                                                    <img class="uk-responsive-height" src="<?= $v['src'] ?>" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove"><?= $v['title'] ?></h4>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__desc"><?= $v['desc'] ?></div>
+                                            </div>
+                                        </li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+
+                            <div class="uk-hidden@s uk-light">
+                                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                            <div class="uk-visible@s">
+                                <a class="uk-position-center-left-out uk-position-small system__modal__slidenav system__modal__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right-out uk-position-small system__modal__slidenav system__modal__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                        </div>
+
+                        <ul class="system__modal__dotnav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-grid-10"></ul>
+
+                    </div>
+                </li>
                 <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
                 <li></li>
             </ul>

@@ -110,6 +110,7 @@
       }
     }
     &__dotnav{
+      margin-top: 10px !important;
       >li{
         >a{
           $x:12px;
@@ -122,6 +123,42 @@
           >a{
             background: #987413;
             border-color: #987413;
+          }
+        }
+      }
+    }
+    &__weapons{
+      &__boximg{
+        height: 137px;
+        @include media-breakpoint-down('m'){
+          height: 54px !important;
+        }
+      }
+      &__title{
+        text-transform: uppercase;
+        color: #000000;
+        @extend .fz-28;
+        line-height: (34/28);
+        font-family: $font-Gotham-Bold;
+        @include media-breakpoint-down('m'){
+          font-size: 16px !important;
+        }
+      }
+      &__desc{
+        letter-spacing: -0.02em;
+        color: #4D4949;
+        @extend .fz-24;
+        line-height: (1.4);
+        font-family: $font-Gotham-Book;
+        @include media-breakpoint-down('m'){
+          font-size: 14px !important;
+        }
+      }
+      &__item{
+        &:nth-child(n+2){
+          margin-top: 5px;
+          @include media-breakpoint-up('l'){
+            margin-top: 10px;
           }
         }
       }
@@ -161,7 +198,7 @@
       padding: 20px;
       padding-bottom: 15px;
       $x:57px;
-      padding-top: calc(#{$x} - 15px);
+      padding-top: calc(#{$x} - 25px);
       margin-top: calc((0px - #{$x})/2);
       background: #F0EDE3;
       border-radius: 28px;
