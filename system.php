@@ -22,8 +22,8 @@
         <div class="uk-width-1-1 uk-flex-auto uk-flex uk-flex-column">
             <div class="uk-text-center uk-position-relative uk-position-z-index" uk-switcher="animation: uk-animation-fade; toggle: > *">
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Introduction</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Weapons</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Mozzies</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Weapons</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Mozzies</button>
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Settings</button>
             </div>
 
@@ -149,7 +149,64 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
 
                     </div>
                 </li>
-                <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+                <li>
+                    <div uk-slider="finite: true;sets: true">
+
+                        <div class="uk-position-relative">
+
+                            <div class="uk-slider-container">
+                                <ul class="uk-slider-items uk-child-width-1-1 uk-grid" uk-grid>
+                                    <li class="uk-width-1-1">
+                                        <div class="system__modal__mozzies__item">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-position-relative">
+                                                        <div class="uk-cover-container">
+                                                            <canvas width="136" height="136"></canvas>
+                                                        </div>
+                                                        <img class="uk-position-center-right" src="" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="system__modal__mozzies__item">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="uk-position-relative">
+                                                        <div class="uk-cover-container">
+                                                            <canvas width="136" height="136"></canvas>
+                                                        </div>
+                                                        <img class="uk-position-center-right" src="" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand">
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="uk-hidden@s uk-light">
+                                <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                            <div class="uk-visible@s">
+                                <a class="uk-position-center-left-out uk-position-small system__modal__slidenav system__modal__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                <a class="uk-position-center-right-out uk-position-small system__modal__slidenav system__modal__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                            </div>
+
+                        </div>
+
+                        <ul class="system__modal__dotnav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-grid-10"></ul>
+
+                    </div>
+                </li>
                 <li></li>
             </ul>
         </div>
