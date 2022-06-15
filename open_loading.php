@@ -11,7 +11,7 @@
         </div>
     </div>
 </div>
-<div class="opening__homepage">
+<div class="opening__homepage" uk-scrollspy="cls: uk-animation-scale-down; repeat: true">
     <div class="uk-position-top">
         <nav class="opening__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
             <div class="uk-navbar-left">
