@@ -29,7 +29,7 @@
       background-size: 100%;
       width: 477px;
       min-height: 303px;
-      background-image: url("images/00-Mobile-Opening/00-Atom/Board.png");
+      background-image: url("images/00-Mobile-Opening-00-Atom-Board.png");
       @include media-breakpoint-up('m'){
         width: 599px;
         min-height: 411px;
@@ -100,15 +100,15 @@
         }
       }
       &--cancel{
-        background-image: url("images/00-Mobile-Opening/01-Molecule/Bg.png");
+        background-image: url("images/00-Mobile-Opening-01-Molecule-Bg.png");
         @include media-breakpoint-up('m'){
-          background-image: url("images/00-PC-Opening/button4.png");
+          background-image: url("images/00-PC-Opening-button4");
         }
       }
       &--submit{
-        background-image: url("images/00-Mobile-Opening/01-Molecule/Bg1.png");
+        background-image: url("images/00-Mobile-Opening-01-Molecule-Bg1.png");
         @include media-breakpoint-up('m'){
-          background-image: url("images/00-PC-Opening/button3.png");
+          background-image: url("images/00-PC-Opening-button3.png");
         }
       }
     }
@@ -224,12 +224,12 @@
       width: 314px;
       $x:90px;
       line-height: calc(#{$x} - 2px);
-      background-image: url("images/00-PC-Opening/00-Atom/Bg.png");
+      background-image: url("images/00-PC-Opening-00-Atom-Bg.png");
       @include media-breakpoint-down('s'){
         $x:56px;
         line-height: calc(#{$x} - 2px);
         width: 156px;
-        background-image: url("images/mobile/00-Mobile-Opening/01-Molecule/Bg.png");
+        background-image: url("images/mobile-00-Mobile-Opening-01-Molecule-Bg.png");
         font-size: 21px !important;
       }
     }

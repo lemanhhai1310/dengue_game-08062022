@@ -12,11 +12,11 @@
       background-color: transparent;
       width: 709px;
       min-height: 318px;
-      background-image: url("images/01-Mobile-System/00-Atom/Board.png");
+      background-image: url("images/01-Mobile-System-00-Atom-Board.png");
       @include media-breakpoint-up('l'){
         width: 1204px;
         min-height: 689px;
-        background-image: url("images/01-PC-System/00-Atom/Board.png");
+        background-image: url("images/01-PC-System-00-Atom-Board.png");
       }
     }
     &__close{
@@ -27,12 +27,12 @@
       right: #{$y};
       width: 56px;
       height: 53px;
-      background-image: url("images/01-Mobile-System/01-Molecule/Round_BTN.png");
+      background-image: url("images/01-Mobile-System-01-Molecule-Round_BTN.png");
       @include media-breakpoint-up('l'){
         $x:105px;
         width: 108px;
         height: 105px;
-        background-image: url("images/01-PC-System/01-Molecule/Round_BTN.png");
+        background-image: url("images/01-PC-System-01-Molecule-Round_BTN.png");
         $y:calc((0px - #{$x} + 60px)/2);
         top: #{$y};
         right: #{$y};
@@ -57,17 +57,17 @@
       @include media-breakpoint-down('m'){
         font-size: 19px !important;
       }
-      background-image: url("images/01-Mobile-System/01-Molecule/Bg1.png");
+      background-image: url("images/01-Mobile-System-01-Molecule-Bg1.png");
       &.uk-active{
-        background-image: url("images/01-Mobile-System/01-Molecule/Bg.png");
+        background-image: url("images/01-Mobile-System-01-Molecule-Bg.png");
       }
       @include media-breakpoint-up('l'){
         $x:95px;
         width: 238px;
         line-height: calc(#{$x} - 2px);
-        background-image: url("images/01-PC-System/button-inactive.png");
+        background-image: url("images/01-PC-System-button-inactive.png");
         &.uk-active{
-          background-image: url("images/01-PC-System/00-Atom.png");
+          background-image: url("images/01-PC-System-00-Atom.png");
         }
       }
     }
