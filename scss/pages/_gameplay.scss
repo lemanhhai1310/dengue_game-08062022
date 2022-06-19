@@ -1,0 +1,10 @@
+.gameplay{
+  &__congratulation{
+    &__modal{
+      .uk-modal-dialog{
+        width: 650px;
+        background: transparent;
+      }
+    }
+  }
+}
