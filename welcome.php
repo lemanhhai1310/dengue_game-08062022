@@ -29,7 +29,7 @@
                                 <div class="uk-flex uk-flex-column uk-section-xsmall">
                                     <div class="uk-flex-auto">
                                         <?php if ($i<=3): ?>
-                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top">
+                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top <?= ($i==3)?'item__44':'' ?>">
                                             <span class="uk-position-top-center welcome__modal__box2 uk-border-pill">About</span>
                                             <div class="welcome__modal__box1">
                                                 <h2 class="welcome__modal__box1__title uk-h2 uk-position-center">Dengue Fever</h2>
@@ -39,6 +39,16 @@
 
                                         <?php if ($i>3): ?>
                                             <h2 class="welcome__modal__box1__title uk-h2 uk-text-center">why this game?</h2>
+                                        <?php endif; ?>
+
+                                        <?php if ($i==3): ?>
+                                        <div class="uk-text-center item__44">
+                                            <div class="welcome__modal__box3">
+
+                                            </div>
+                                            <div class="welcome__modal__box4">CURRENTLY, THERE IS <span>NO SPECIFIC TREATMENT</span>
+                                                <br> FOR DENGUE FEVER.1</div>
+                                        </div>
                                         <?php endif; ?>
                                     </div>
                                     <div>

@@ -42,6 +42,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:44;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:43;
   &__#{$x}{
     &:nth-child(n+2){
