@@ -36,6 +36,12 @@
       }
     }
   }
+  $x:57;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:50;
   &__#{$x}{
     &:nth-child(n+2){

@@ -29,7 +29,7 @@
                                 <div class="uk-flex uk-flex-column uk-section-xsmall">
                                     <div class="uk-flex-auto">
                                         <?php if ($i<=3): ?>
-                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top <?= ($i==3)?'item__44':'' ?>">
+                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top <?= ($i==3)?'item__44':'' ?> <?= ($i==3)?'item__57':'' ?>">
                                             <span class="uk-position-top-center welcome__modal__box2 uk-border-pill">About</span>
                                             <div class="welcome__modal__box1">
                                                 <h2 class="welcome__modal__box1__title uk-h2 uk-position-center">Dengue Fever</h2>
@@ -46,9 +46,18 @@
                                             <div class="welcome__modal__box3">
 
                                             </div>
-                                            <div class="welcome__modal__box4">CURRENTLY, THERE IS <span>NO SPECIFIC TREATMENT</span>
+                                            <div class="welcome__modal__box4 <?= ($i==3)?'uk-text-uppercase':'' ?>">CURRENTLY, THERE IS <span>NO SPECIFIC TREATMENT</span>
                                                 <br> FOR DENGUE FEVER.1</div>
                                         </div>
+                                        <?php endif; ?>
+
+                                        <?php if ($i==1): ?>
+                                            <div class="uk-text-center uk-position-relative item__57">
+                                                <div class="welcome__modal__box5__txt uk-position-top-center">Dengue is the most rapidly spreading mosquito-borne viral disease in the world.1</div>
+                                                <div class="welcome__modal__box5">
+
+                                                </div>
+                                            </div>
                                         <?php endif; ?>
                                     </div>
                                     <div>
