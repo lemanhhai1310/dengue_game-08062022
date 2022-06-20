@@ -64,10 +64,10 @@
                                             <div class="uk-text-center item__57">
                                                 <div class="item__52">
                                                     <div class="item__11">
-
+                                                        <div class="welcome__modal__box6__txt">Every year dengue causes</div>
                                                     </div>
                                                     <div class="item__11">
-
+                                                        <div class="welcome__modal__box6"></div>
                                                     </div>
                                                 </div>
                                                 <div class="item__52">
