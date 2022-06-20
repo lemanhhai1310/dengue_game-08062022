@@ -36,6 +36,10 @@
                                             </div>
                                         </div>
                                         <?php endif; ?>
+
+                                        <?php if ($i>3): ?>
+                                            <h2 class="welcome__modal__box1__title uk-h2 uk-text-center">why this game?</h2>
+                                        <?php endif; ?>
                                     </div>
                                     <div>
                                         <div class="uk-text-center welcome__modal__txt1">
