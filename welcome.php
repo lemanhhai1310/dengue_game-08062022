@@ -29,7 +29,12 @@
                                 <div class="uk-flex uk-flex-column uk-section-xsmall">
                                     <div class="uk-flex-auto">
                                         <?php if ($i<=3): ?>
-                                        
+                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top">
+                                            <span class="uk-position-top-center welcome__modal__box2 uk-border-pill">About</span>
+                                            <div class="welcome__modal__box1">
+                                                <h2 class="welcome__modal__box1__title uk-h2 uk-position-center">Dengue Fever</h2>
+                                            </div>
+                                        </div>
                                         <?php endif; ?>
                                     </div>
                                     <div>
