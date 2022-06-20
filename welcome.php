@@ -38,7 +38,7 @@
                                         <?php endif; ?>
 
                                         <?php if ($i>3): ?>
-                                            <h2 class="welcome__modal__box1__title uk-h2 uk-text-center">why this game?</h2>
+                                            <h2 class="welcome__modal__box1__title uk-h2 uk-text-center <?= ($i==4)?'item__61':'' ?>">why this game?</h2>
                                         <?php endif; ?>
 
                                         <?php if ($i==3): ?>
@@ -74,6 +74,21 @@
                                                     <div class="welcome__modal__box4">
                                                         In Malaysia, dengue is endemic,3 <br>
                                                         with the <span>highest ever incidence of 131,101 cases</span> <br> reported in 2019.4
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if ($i==4): ?>
+                                            <div class="uk-text-center item__61">
+                                                <div class="item__49">
+                                                    <div class="welcome__modal__box6__txt">
+                                                        To heighten our awareness of dengue especially to recognize <br> our personal risk of getting dengue
+                                                    </div>
+                                                </div>
+                                                <div class="item__49">
+                                                    <div class="welcome__modal__box7">
+
                                                     </div>
                                                 </div>
                                             </div>
