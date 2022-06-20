@@ -29,7 +29,7 @@
                                 <div class="uk-flex uk-flex-column uk-section-xsmall">
                                     <div class="uk-flex-auto">
                                         <?php if ($i<=3): ?>
-                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top <?= ($i==3)?'item__44':'' ?> <?= ($i==3)?'item__57':'' ?>">
+                                        <div class="uk-position-relative uk-text-center uk-margin-medium-top <?= ($i==3)?'item__44':'' ?> <?= ($i<2)?'item__57':'' ?>">
                                             <span class="uk-position-top-center welcome__modal__box2 uk-border-pill">About</span>
                                             <div class="welcome__modal__box1">
                                                 <h2 class="welcome__modal__box1__title uk-h2 uk-position-center">Dengue Fever</h2>
@@ -56,6 +56,25 @@
                                                 <div class="welcome__modal__box5__txt uk-position-top-center">Dengue is the most rapidly spreading mosquito-borne viral disease in the world.1</div>
                                                 <div class="welcome__modal__box5">
 
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if ($i==2): ?>
+                                            <div class="uk-text-center item__57">
+                                                <div class="item__52">
+                                                    <div class="item__11">
+
+                                                    </div>
+                                                    <div class="item__11">
+
+                                                    </div>
+                                                </div>
+                                                <div class="item__52">
+                                                    <div class="welcome__modal__box4">
+                                                        In Malaysia, dengue is endemic,3 <br>
+                                                        with the <span>highest ever incidence of 131,101 cases</span> <br> reported in 2019.4
+                                                    </div>
                                                 </div>
                                             </div>
                                         <?php endif; ?>

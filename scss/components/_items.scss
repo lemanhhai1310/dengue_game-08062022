@@ -42,6 +42,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:52;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:50;
   &__#{$x}{
     &:nth-child(n+2){
@@ -118,6 +124,12 @@
     }
   }
   $x:15;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:11;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;

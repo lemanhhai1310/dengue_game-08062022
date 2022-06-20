@@ -40,8 +40,9 @@
       @extend .fz-36;
       font-family: $font-Gotham-Book;
       color: #FFFFFF;
+      line-height: 1.3;
       span{
-
+        color: #FF7D7D;
       }
     }
     &__box3{
