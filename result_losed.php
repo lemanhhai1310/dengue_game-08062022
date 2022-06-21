@@ -1,4 +1,4 @@
-<?php $data["title"] = "05-PC-Result/1-Victory"; ?>
+<?php $data["title"] = "05-PC-Result/2-Losed"; ?>
 <?php $body = '' ?>
 <?php require "template-parts/layouts/header.php"; ?>
 <div class="uk-position-top">
@@ -48,11 +48,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="uk-position-bottom-center result__victory__modal__boxBottom">
-                <a href="" class="result__victory__modal__btn result__victory__modal__btn--home"></a>
-                <a href="" class="result__victory__modal__btn result__victory__modal__btn--cup"></a>
-                <a href="" class="result__victory__modal__btn result__victory__modal__btn--reload"></a>
             </div>
         </div>
     </div>
