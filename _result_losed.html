@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>05-PC-Result/2-Losed</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1655798184">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/resloader.js?v=1655798184"></script>
+    <script src="js/app.js?v=1655798184"></script>
 </head>
-<body>
-
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/background-4-1.png" uk-img><div class="uk-position-top">
+    <nav class="opening__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                <div class="opening__navbar__boxIcon" data-src="images/00-PC-Opening/cup.png" uk-img></div>
+            </div>
+        </div>
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+                <div class="opening__navbar__boxIcon" data-src="images/00-PC-Opening/setup.png" uk-img></div>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- This is the modal with the outside close button -->
+    <div id="modal-result-losed" class="uk-flex-top result__victory__modal" uk-modal>
+        <div class="uk-modal-dialog uk- uk-margin-auto-vertical uk-text-center uk-position-relative">
+            <div class="uk-modal-body uk-margin-auto uk-position-relative uk-position-z-index">
+                <div class="uk-position-top-center result__victory__modal__bgheader">
+                    <h2 class="uk-h2 result__victory__modal__bgheader__title">GAME OVER</h2>
+                </div>
+                <div class="uk-position-cover uk-card uk-card-body uk-flex-middle uk-flex">
+                    <div class="uk-width-1-1">
+                        <div class="">
+                            <div class="result__victory__modal__txt2">
+                                You've failed to eliminate at least 50 mosquitoes within 1 minute.
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="result__victory__modal__boxcard">
+                                <div class="uk-position-relative uk-flex uk-flex-left">
+                                    <div class="result__victory__modal__box__bg result__victory__modal__box__bg--losed uk-position-relative uk-position-z-index"></div>
+                                    <div class="result__victory__modal__box result__victory__modal__box--losed uk-border-pill uk-position-bottom-right uk-flex uk-flex-middle uk-flex-center">
+                                        <div>
+                                            <div class="result__victory__modal__box__txt3">Justeen is now affected by dengue virus and needs to be hospitalized!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-position-bottom-center result__victory__modal__boxBottom">
+                    <a href="" class="result__victory__modal__btn result__victory__modal__btn--home"></a>
+                    <a href="" class="result__victory__modal__btn result__victory__modal__btn--cup"></a>
+                    <a href="" class="result__victory__modal__btn result__victory__modal__btn--reload"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        UIkit.modal('#modal-result-losed').show();
+    </script>
+</div>
+<!--/app-->
 </body>
 </html>
