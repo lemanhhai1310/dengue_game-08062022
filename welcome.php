@@ -18,7 +18,7 @@
 <div id="modal-welcome-full" class="welcome__modal uk-modal-full uk-padding-remove" uk-modal>
     <div class="uk-modal-dialog welcome__modal__dialog">
         <div class="uk-container uk-container-large">
-            <div uk-slider>
+            <div uk-slider="finite: true;index:0;">
 
                 <div class="uk-position-relative">
 
