@@ -48,6 +48,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:54;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:52;
   &__#{$x}{
     &:nth-child(n+2){
@@ -123,6 +129,12 @@
       margin-top: #{$x}px;
     }
   }
+  $x:27;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
   $x:24;
   &__#{$x}{
     &:nth-child(n+2){
@@ -172,6 +184,12 @@
     }
   }
   $x:10;
+  &__#{$x}{
+    &:nth-child(n+2){
+      margin-top: #{$x}px;
+    }
+  }
+  $x:9;
   &__#{$x}{
     &:nth-child(n+2){
       margin-top: #{$x}px;
