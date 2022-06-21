@@ -1,10 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
+    <script src="/__prepros.js"></script>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>04-PC-Gameplay/2-Congratulation-1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1655786624">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/resloader.js?v=1655786624"></script>
+    <script src="js/app.js?v=1655786624"></script>
 </head>
-<body>
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/background-4-1.png" uk-img><div class="uk-position-top">
+    <nav class="opening__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                <div class="opening__navbar__boxIcon" data-src="images/00-PC-Opening/cup.png" uk-img></div>
+            </div>
+        </div>
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+                <div class="opening__navbar__boxIcon" data-src="images/00-PC-Opening/setup.png" uk-img></div>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- This is the modal with the outside close button -->
+    <div id="modal-gameplay-congratulation" class="uk-flex-top gameplay__congratulation__modal" uk-modal>
+        <div class="uk-modal-dialog uk-margin-auto-vertical uk-position-relative">
+            <div class="gameplay__congratulation__modal__bg uk-position-top-center"></div>
+            <div class="uk-position-relative uk-position-z-index">
+                <div class="uk-text-center item__19">
+                    <div class="gameplay__congratulation__modal__bgheader"><h2 class="uk-h2 gameplay__congratulation__modal__bgheader__title">Congratulations!</h2></div>
+                </div>
+                <div class="item__19">
+                    <div class="item__34">
+                        <div style="width: 663px;" class="uk-margin-auto uk-position-relative">
+                            <div class="uk-modal-body gameplay__congratulation__modal__body uk-position-bottom">
 
+                            </div>
+                            <div style="min-height: 492px" class="uk-card gameplay__congratulation__modal__body1 uk-card-body uk-position-relative uk-position-z-index">
+                                <div class="item__29 uk-text-center">
+                                    <div class="uk-position-relative uk-display-inline-block">
+                                        <div class="uk-cover-container uk-flex-inline uk-margin-auto gameplay__congratulation__modal__boxImg uk-border-circle">
+                                            <canvas width="308" height="308"></canvas>
+                                            <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                <img src="images/hands2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="gameplay__congratulation__modal__boxImg__icon uk-position-bottom-right"></div>
+                                    </div>
+                                </div>
+                                <div class="item__29 uk-text-center">
+                                    <div class="item__15">
+                                        <div class="gameplay__congratulation__modal__txt1">You have bagged your 1ST weapon</div>
+                                    </div>
+                                    <div class="item__15">
+                                        <div class="item__10">
+                                            <input class="uk-input gameplay__congratulation__modal__input" type="text" placeholder="" value="A giant pair of hands" disabled>
+                                        </div>
+                                        <div class="item__10">
+                                            <div class="gameplay__congratulation__modal__txt2">Smack to kill all mosquitoes
+                                                <br>
+                                                within (X) radius</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-text-center item__34">
+                        <a href="" class="uk-button uk-button-default gameplay__congratulation__modal__btn">GOTCHA!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        UIkit.modal('#modal-gameplay-congratulation').show();
+    </script>
+</div>
+<!--/app-->
 </body>
 </html>
