@@ -22,8 +22,8 @@
         <div class="uk-width-1-1 uk-flex-auto uk-flex uk-flex-column">
             <div class="uk-text-center uk-position-relative uk-position-z-index" uk-switcher="animation: uk-animation-fade; toggle: > *">
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Introduction</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Weapons</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Mozzies</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Weapons</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Mozzies</button>
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Settings</button>
             </div>
 
