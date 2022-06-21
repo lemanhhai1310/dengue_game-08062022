@@ -15,7 +15,7 @@
         </div>
     </nav>
 </div>
-<div id="modal-welcome-full" class="welcome__modal uk-modal-full uk-padding-remove" uk-modal>
+<div id="modal-intro-full" class="welcome__modal uk-modal-full uk-padding-remove" uk-modal>
     <div class="uk-modal-dialog welcome__modal__dialog">
         <div class="uk-container uk-container-large">
             <div uk-slider="finite: true;">
@@ -113,6 +113,6 @@
     </div>
 </div>
 <script>
-    UIkit.modal('#modal-welcome-full').show();
+    UIkit.modal('#modal-intro-full').show();
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>

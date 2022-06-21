@@ -162,6 +162,7 @@
       width: #{$x};
       height: #{$x};
       display: flex;
+      cursor: pointer;
       @include media-breakpoint-up('m'){
         $x:75px;
         width: #{$x};
