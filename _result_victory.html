@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <script src="/__prepros.js"></script>
+    <meta charset="UTF-8">
+    <title>05-PC-Result/1-Victory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <!--CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <link rel="stylesheet" href="style.css?v=1655794026">
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script src="js/resloader.js?v=1655794026"></script>
+    <script src="js/app.js?v=1655794026"></script>
+</head>
+<body class="">
+<!--app-->
+<div id="app" class="uk-height-viewport uk-offcanvas-content uk-overflow-hidden uk-position-relative uk-background-norepeat uk-background-center-center uk-background-cover" data-src="images/background-4-1.png" uk-img><div class="uk-position-top">
+    <nav class="opening__navbar uk-navbar-container uk-navbar-transparent" uk-navbar>
+        <div class="uk-navbar-left">
+            <div class="uk-navbar-item">
+                <div class="opening__navbar__boxIcon" data-src="images/00-PC-Opening/cup.png" uk-img></div>
+            </div>
+        </div>
+        <div class="uk-navbar-right">
+            <div class="uk-navbar-item">
+                <div class="opening__navbar__boxIcon" data-src="images/00-PC-Opening/setup.png" uk-img></div>
+            </div>
+        </div>
+    </nav>
+</div>
+    <!-- This is the modal with the outside close button -->
+    <div id="modal-result-victory" class="uk-flex-top result__victory__modal" uk-modal>
+        <div class="uk-modal-dialog uk- uk-margin-auto-vertical uk-text-center uk-position-relative">
+            <div class="result__victory__modal__bg uk-position-top-center"></div>
+            <div class="uk-modal-body uk-margin-auto uk-position-relative uk-position-z-index">
+                <div class="uk-position-top-center result__victory__modal__bgheader">
+                    <h2 class="uk-h2 result__victory__modal__bgheader__title">Victory</h2>
+                </div>
+                <div class="uk-position-cover uk-card uk-card-body uk-flex-middle uk-flex">
+                    <div class="uk-width-1-1">
+                        <div class="item__16">
+                            <div class="result__victory__modal__txt1">You have won the game!</div>
+                        </div>
+                        <div class="item__16">
+                            <div class="result__victory__modal__boxcard">
+                                <div class="uk-position-relative uk-flex uk-flex-left">
+                                    <div class="result__victory__modal__box__bg uk-position-relative uk-position-z-index"></div>
+                                    <div class="result__victory__modal__box uk-border-pill uk-position-bottom-right uk-flex uk-flex-middle uk-flex-center">
+                                        <div>
+                                            <div class="result__victory__modal__box__txt1">Mosquitoes killed</div>
+                                            <div class="result__victory__modal__box__txt2">401</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item__16">
+                            <div class="result__victory__modal__txt2">
+                                Now Justeen has <span>BETTER PROTECTED</span> <br>
+                                against dengue
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        UIkit.modal('#modal-result-victory').show();
+    </script>
+</div>
+<!--/app-->
+</body>
+</html>
