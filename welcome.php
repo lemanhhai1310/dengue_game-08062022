@@ -93,6 +93,38 @@
                                                 </div>
                                             </div>
                                         <?php endif; ?>
+
+                                        <?php if ($i==5): ?>
+                                            <div class="item__30">
+                                                <div uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="welcome__modal__box8 welcome__modal__box8--bg">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <p class="welcome__modal__box8__txt"><span>TAKEDA is developing our very own dengue vaccine candidate, TAK-003</span>, with the potential to change dengue prevention globally and locally in Malaysia.</p>
+                                                        <p class="welcome__modal__box8__txt">TAK-003 has demonstrated <span>overall efficacy against dengue, including against hospitalization</span> both in people, who have or have not previously been exposed to the disease.2</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="item__30">
+                                                <div class="welcome__modal__box8__divider"></div>
+                                            </div>
+                                            <div class="item__30">
+                                                <div uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="welcome__modal__box8">
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <p class="welcome__modal__txt1">Disclaimer: TAK-003 is currently not approved for any indication in Malaysia.</p>
+                                                        <p class="welcome__modal__txt1">This information is available to Takeda staff for information purposes only; it should not be used for diagnosing or treating a health problem or disease. It is not intended to substitute for consultation with a healthcare provider.  Please consult your healthcare provider for further advice.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
                                     </div>
                                     <div>
                                         <div class="uk-text-center welcome__modal__txt1">
