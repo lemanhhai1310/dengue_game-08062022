@@ -89,11 +89,11 @@
       border-color: transparent !important;
       span{
         @extend .fz-30;
-        font-family: $font-Gotham-Medium;
+        //font-family: $font-Gotham-Medium;
         position: relative;
-        top: 6px;
+        //top: 6px;
         @include media-breakpoint-up('m'){
-          top: 10px;
+          //top: 10px;
         }
         @include media-breakpoint-down('s'){
           font-size: 19px !important;
@@ -134,10 +134,10 @@
       span{
         color: #EF1C26;
         @include fluidx(52px,24px,font-size);
-        @include fluidx(15px,7px,top);
+        //@include fluidx(15px,7px,top);
 
         font-style: italic;
-        font-family: $font-Gotham-Medium;
+        //font-family: $font-Gotham-Medium;
         line-height: calc(50/52);
         position: relative;
       }

@@ -172,20 +172,44 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                                     <div class="item__12">
                                                         <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
                                                             <?php if ($i==1): ?>
-
+                                                                The Normie Mozzie
+                                                            <?php endif; ?>
+                                                            <?php if ($i==2): ?>
+                                                                The Petite Mozzie
+                                                            <?php endif; ?>
+                                                            <?php if ($i==3): ?>
+                                                                The Chubby Mozzie
+                                                            <?php endif; ?>
+                                                            <?php if ($i==4): ?>
+                                                                The Boss
                                                             <?php endif; ?>
                                                         </h4>
                                                     </div>
                                                     <div class="item__12">
                                                         <div class="system__modal__weapons__desc">
-                                                        <?php if ($i==1): ?>
-
-                                                        <?php endif; ?>
+                                                            <?php if ($i==1): ?>
+                                                                Your normal neighborhood dengue carrier. He might look harmless, even cute, but don't be fooled. The virus can be deadly.
+                                                            <?php endif; ?>
+                                                            <?php if ($i==2): ?>
+                                                                This one is indeed cute. Not so long ago he was still a larvae, swimming around in a puddle in your backyard. But give him some time… he will be a dangerous one and ready to make you severely sick.
+                                                            <?php endif; ?>
+                                                            <?php if ($i==3): ?>
+                                                                This one has a big appetite. He drank so much that he could barely fly. Worst of all, he left no tips, just viruses. Talk about an ungrateful guest!
+                                                            <?php endif; ?>
+                                                            <?php if ($i==4): ?>
+                                                                The ultimate virus-spreading mozzie. He's been around since forever and has caused so much damage to human kind.
+                                                                He's super fast, super strong, and carries a few serotypes of the dengue virus.1
+                                                                Take him down before he gets Justeen hospitalized.
+                                                            <?php endif; ?>
                                                         </div>
+                                                        <?php if ($i==4): ?>
+                                                            <p>1.  Biswal A, et al. Efficacy of a tetravalent dengue vaccine in healthy children aged 4-16 years: a randomised, placebo-controlled, phase 3 trial. Lancet. 2020;395:1423-1433.</p>
+                                                        <?php endif; ?>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <?php if ($i<4): ?>
                                         <div class="system__modal__mozzies__item">
                                             <div class="uk-grid-small" uk-grid>
                                                 <div class="uk-width-auto">
@@ -198,14 +222,23 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                                 </div>
                                                 <div class="uk-width-expand">
                                                     <div class="item__12">
-                                                        <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove"><?= $v['title'] ?></h4>
+                                                        <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
+                                                            <?php if ($i==1): ?>
+                                                                The Naughty Mozzie
+                                                            <?php endif; ?>
+                                                        </h4>
                                                     </div>
                                                     <div class="item__12">
-                                                        <div class="system__modal__weapons__desc"><?= $v['desc'] ?></div>
+                                                        <div class="system__modal__weapons__desc">
+                                                            <?php if ($i==1): ?>
+                                                                Ahh… The naughty mozzie. Ever tried to smash one down but can't seem to get him no matter how hard you tried? He is fast, relentless and annoying!
+                                                            <?php endif; ?>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+                                        <?php endif; ?>
                                     </li>
                                     <?php endfor; ?>
                                 </ul>
