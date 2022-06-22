@@ -22,8 +22,8 @@
         <div class="uk-width-1-1 uk-flex-auto uk-flex uk-flex-column">
             <div class="uk-text-center uk-position-relative uk-position-z-index" uk-switcher="animation: uk-animation-fade; toggle: > *">
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Introduction</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Weapons</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Mozzies</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Weapons</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Mozzies</button>
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Settings</button>
             </div>
 
@@ -156,6 +156,7 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
 
                             <div class="uk-slider-container">
                                 <ul class="uk-slider-items uk-child-width-1-1 uk-grid" uk-grid>
+                                    <?php for ($i=1;$i<=4;$i++): ?>
                                     <li class="uk-width-1-1">
                                         <div class="system__modal__mozzies__item">
                                             <div class="uk-grid-small" uk-grid>
@@ -168,7 +169,20 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                                     </div>
                                                 </div>
                                                 <div class="uk-width-expand">
+                                                    <div class="item__12">
+                                                        <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
+                                                            <?php if ($i==1): ?>
 
+                                                            <?php endif; ?>
+                                                        </h4>
+                                                    </div>
+                                                    <div class="item__12">
+                                                        <div class="system__modal__weapons__desc">
+                                                        <?php if ($i==1): ?>
+
+                                                        <?php endif; ?>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -183,11 +197,17 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                                     </div>
                                                 </div>
                                                 <div class="uk-width-expand">
-
+                                                    <div class="item__12">
+                                                        <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove"><?= $v['title'] ?></h4>
+                                                    </div>
+                                                    <div class="item__12">
+                                                        <div class="system__modal__weapons__desc"><?= $v['desc'] ?></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </li>
+                                    <?php endfor; ?>
                                 </ul>
                             </div>
 

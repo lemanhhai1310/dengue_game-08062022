@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -9,15 +10,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1655114218">
+    <link rel="stylesheet" href="style.css?v=1655894162">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    <script src="js/resloader.js?v=1655114218"></script>
-    <script src="js/app.js?v=1655114218"></script>
+    <script src="js/resloader.js?v=1655894162"></script>
+    <script src="js/app.js?v=1655894162"></script>
 </head>
 <body class="">
 <!--app-->
@@ -41,9 +42,9 @@
             <button class="uk-modal-close-default system__modal__close" type="button" uk-close></button>
             <div class="uk-width-1-1 uk-flex-auto uk-flex uk-flex-column">
                 <div class="uk-text-center uk-position-relative uk-position-z-index" uk-switcher="animation: uk-animation-fade; toggle: > *">
-                    <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Introduction</button>
+                    <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Introduction</button>
                     <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Weapons</button>
-                    <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Mozzies</button>
+                    <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Mozzies</button>
                     <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Settings</button>
                 </div>
 
@@ -96,8 +97,306 @@
 
                         </div>
                     </li>
-                    <li>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur, sed do eiusmod.</li>
+                    <li>
+                        <div uk-slider="finite: true;sets: true">
+
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container">
+                                    <ul class="uk-slider-items uk-child-width-1-1 uk-grid" uk-grid>
+                                        <li class="uk-width-1-3">
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__boximg">
+                                                    <img class="uk-responsive-height" src="images/tab=Weapons,name=hand.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">A giant pair of hands</h4>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__desc">Use the hands to smack and kill all mosquitoes within X radius.</div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-3">
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__boximg">
+                                                    <img class="uk-responsive-height" src="images/tab=Weapons,name=spray.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">A can of Insect Spray</h4>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__desc">Slow the mosquitoes in their tracks and get rid of the pesky little ones</div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-3">
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__boximg">
+                                                    <img class="uk-responsive-height" src="images/tab=Weapons,name=incense.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Insect Repellent Incense</h4>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__desc">Smoke and confuse the mosquitoes and get rid of the pesky little ones</div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-3">
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__boximg">
+                                                    <img class="uk-responsive-height" src="images/tab=Weapons,name=racket.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Insect Racket</h4>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__desc">Swipe to kill all the mosquitoes in the area. Bonus: You can do this 3 times.</div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-2-3">
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__boximg">
+                                                    <img class="uk-responsive-height" src="images/tab=Weapons,name=potion.png" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Invincible Potion</h4>
+                                            </div>
+                                            <div class="system__modal__weapons__item">
+                                                <div class="system__modal__weapons__desc">One shot protects you from the mosquitoes for 10 sec while you wreak havoc on them.
+                                                    Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FULL PROTECTION.</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-hidden@s uk-light">
+                                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
+
+                                <div class="uk-visible@s">
+                                    <a class="uk-position-center-left-out uk-position-small system__modal__slidenav system__modal__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right-out uk-position-small system__modal__slidenav system__modal__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
+
+                            </div>
+
+                            <ul class="system__modal__dotnav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-grid-10"></ul>
+
+                        </div>
+                    </li>
+                    <li>
+                        <div uk-slider="finite: true;sets: true">
+
+                            <div class="uk-position-relative">
+
+                                <div class="uk-slider-container">
+                                    <ul class="uk-slider-items uk-child-width-1-1 uk-grid" uk-grid>
+                                        <li class="uk-width-1-1">
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
+
+                                                            </h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Invincible Potion</h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">One shot protects you from the mosquitoes for 10 sec while you wreak havoc on them.
+                                                                Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FULL PROTECTION.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-1">
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
+                                                            </h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Invincible Potion</h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">One shot protects you from the mosquitoes for 10 sec while you wreak havoc on them.
+                                                                Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FULL PROTECTION.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-1">
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
+                                                            </h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Invincible Potion</h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">One shot protects you from the mosquitoes for 10 sec while you wreak havoc on them.
+                                                                Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FULL PROTECTION.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="uk-width-1-1">
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">
+                                                            </h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="system__modal__mozzies__item">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="uk-position-relative">
+                                                            <div class="uk-cover-container">
+                                                                <canvas width="136" height="136"></canvas>
+                                                            </div>
+                                                            <img class="uk-position-center-right" src="" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <div class="item__12">
+                                                            <h4 class="system__modal__weapons__title uk-h4 uk-margin-remove">Invincible Potion</h4>
+                                                        </div>
+                                                        <div class="item__12">
+                                                            <div class="system__modal__weapons__desc">One shot protects you from the mosquitoes for 10 sec while you wreak havoc on them.
+                                                                Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FULL PROTECTION.</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="uk-hidden@s uk-light">
+                                    <a class="uk-position-center-left uk-position-small" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right uk-position-small" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
+
+                                <div class="uk-visible@s">
+                                    <a class="uk-position-center-left-out uk-position-small system__modal__slidenav system__modal__slidenav--prev" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                                    <a class="uk-position-center-right-out uk-position-small system__modal__slidenav system__modal__slidenav--next" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                                </div>
+
+                            </div>
+
+                            <ul class="system__modal__dotnav uk-slider-nav uk-dotnav uk-flex-center uk-margin-top uk-grid-10"></ul>
+
+                        </div>
+                    </li>
                     <li></li>
                 </ul>
             </div>
