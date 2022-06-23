@@ -291,10 +291,29 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                 </li>
                 <li>
                     <div>
-                        <div class="">
-
+                        <div class="system__modal__setting__item1">
+                            <div class="system__modal__setting__item2">
+                                <div class="uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <a href="" class="system__modal__setting__icon system__modal__setting__icon--sound"></a>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <input class="uk-range system__modal__setting__range" type="range" value="2" min="0" max="10" step="0.1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="system__modal__setting__item2">
+                                <div class="uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <a href="" class="system__modal__setting__icon system__modal__setting__icon--music"></a>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <input class="uk-range system__modal__setting__range" type="range" value="2" min="0" max="10" step="0.1">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="">
+                        <div class="system__modal__setting__item1">
                             <div class="uk-child-width-auto uk-flex-center" uk-grid>
                                 <div>
                                     <a href="" class="system__modal__setting__btn uk-button uk-button-default">Change name</a>
