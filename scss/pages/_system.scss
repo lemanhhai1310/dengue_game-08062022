@@ -2,6 +2,7 @@
   &__modal{
     &__body{
       display: flex;
+      padding-top: 20px;
       @include media-breakpoint-up('l'){
         $x:70px;
         padding: calc(#{$x} - 0px) calc(#{$x} - 5px);
@@ -11,7 +12,7 @@
       background-size: contain;
       background-color: transparent;
       width: 709px;
-      min-height: 318px;
+      height: 318px;
       background-image: url("images/01-Mobile-System-00-Atom-Board.png");
       @include media-breakpoint-up('l'){
         width: 1204px;
@@ -128,10 +129,33 @@
       }
     }
     &__mozzies{
-
+      &__txt{
+        color: #4D4949;
+        @extend .fz-14;
+        font-family: $font-Gotham-Medium;
+        margin-bottom: 0;
+        @include media-breakpoint-down('s'){
+          font-size: 10px !important;
+          margin-top: 5px !important;
+        }
+      }
+      &__boximg{
+        background: #E7BAAC;
+        canvas{
+          @include fluidx(136px,68px,width,'l','m');
+        }
+      }
+      &__img{
+        @include media-breakpoint-down('s'){
+          width: 65% !important;
+        }
+      }
       &__item{
         &:nth-child(n+2){
-          margin-top: 30px;
+          margin-top: 5px;
+          @include media-breakpoint-up('m'){
+            margin-top: 30px;
+          }
         }
       }
     }

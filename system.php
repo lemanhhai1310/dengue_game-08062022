@@ -157,15 +157,29 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                             <div class="uk-slider-container">
                                 <ul class="uk-slider-items uk-child-width-1-1 uk-grid" uk-grid>
                                     <?php for ($i=1;$i<=4;$i++): ?>
+                                        <?php if ($i==1):?>
+                                            <?php $src1 = 'images/tab11_muoingao11.png';$src2 = 'images/tab12_muoiquay_011.png'; ?>
+                                        <?php endif; ?>
+                                        <?php if ($i==2):?>
+                                            <?php $src1 = 'images/tab21_muoi_xitrum_001.png';$src2 = 'images/tab22_muoitaysai_live_001.png'; ?>
+                                        <?php endif; ?>
+                                        <?php if ($i==3):?>
+                                            <?php $src1 = 'images/tab31_muoiphilu_live_001.png';$src2 = 'images/tab32_muoixike_live_011.png'; ?>
+                                        <?php endif; ?>
+                                        <?php if ($i==4):?>
+                                            <?php $src1 = 'images/tab41_boss-idle_live_001.png';$src2 = 'images/tab41_boss-idle_live_001.png'; ?>
+                                        <?php endif; ?>
                                     <li class="uk-width-1-1">
                                         <div class="system__modal__mozzies__item">
                                             <div class="uk-grid-small" uk-grid>
                                                 <div class="uk-width-auto">
                                                     <div class="uk-position-relative">
-                                                        <div class="uk-cover-container">
+                                                        <div class="uk-cover-container uk-border-circle system__modal__mozzies__boximg">
                                                             <canvas width="136" height="136"></canvas>
                                                         </div>
-                                                        <img class="uk-position-center-right" src="" alt="">
+                                                        <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                            <img class="system__modal__mozzies__img" src="<?= $src1 ?>" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="uk-width-expand">
@@ -203,7 +217,7 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                                             <?php endif; ?>
                                                         </div>
                                                         <?php if ($i==4): ?>
-                                                            <p>1.  Biswal A, et al. Efficacy of a tetravalent dengue vaccine in healthy children aged 4-16 years: a randomised, placebo-controlled, phase 3 trial. Lancet. 2020;395:1423-1433.</p>
+                                                            <p class="system__modal__mozzies__txt">1.  Biswal A, et al. Efficacy of a tetravalent dengue vaccine in healthy children aged 4-16 years: a randomised, placebo-controlled, phase 3 trial. Lancet. 2020;395:1423-1433.</p>
                                                         <?php endif; ?>
                                                     </div>
                                                 </div>
@@ -214,10 +228,12 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                             <div class="uk-grid-small" uk-grid>
                                                 <div class="uk-width-auto">
                                                     <div class="uk-position-relative">
-                                                        <div class="uk-cover-container">
+                                                        <div class="uk-cover-container uk-border-circle system__modal__mozzies__boximg">
                                                             <canvas width="136" height="136"></canvas>
                                                         </div>
-                                                        <img class="uk-position-center-right" src="" alt="">
+                                                        <div class="uk-position-cover uk-flex uk-flex-middle uk-flex-center">
+                                                            <img class="system__modal__mozzies__img" src="<?= $src2 ?>" alt="">
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="uk-width-expand">
@@ -226,12 +242,25 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
                                                             <?php if ($i==1): ?>
                                                                 The Naughty Mozzie
                                                             <?php endif; ?>
+                                                            <?php if ($i==2): ?>
+                                                                The Bodyguard
+                                                            <?php endif; ?>
+                                                            <?php if ($i==3): ?>
+                                                                The Bored Mozzie
+                                                            <?php endif; ?>
                                                         </h4>
                                                     </div>
                                                     <div class="item__12">
                                                         <div class="system__modal__weapons__desc">
                                                             <?php if ($i==1): ?>
                                                                 Ahh… The naughty mozzie. Ever tried to smash one down but can't seem to get him no matter how hard you tried? He is fast, relentless and annoying!
+                                                            <?php endif; ?>
+                                                            <?php if ($i==2): ?>
+                                                                These are some big, strong and fast mozzies… Their task is to protect the Big Boss, and spread some deadly virus while they're at it. Take them down to get to the Boss, before it's too late.
+                                                            <?php endif; ?>
+                                                            <?php if ($i==3): ?>
+                                                                This is a spoiled brat. He got it so easy as people just don't excite him anymore. But he still carries with him dengue viruses, just like his kind.
+                                                                So don't let your guard down and get rid of him on sight!
                                                             <?php endif; ?>
                                                         </div>
                                                     </div>
