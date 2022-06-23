@@ -23,8 +23,8 @@
             <div class="uk-text-center uk-position-relative uk-position-z-index" uk-switcher="animation: uk-animation-fade; toggle: > *">
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Introduction</button>
                 <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Weapons</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Mozzies</button>
-                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Settings</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default" type="button">Mozzies</button>
+                <button class="system__modal__tabBtn uk-button uk-button-default uk-active" type="button">Settings</button>
             </div>
 
             <ul class="system__modal__switcher uk-switcher uk-flex-auto uk-background-muted uk-flex uk-flex-middle">
@@ -289,7 +289,23 @@ Look out for the 2nd shot. You need to take the 2nd shot within 3 months for FUL
 
                     </div>
                 </li>
-                <li></li>
+                <li>
+                    <div>
+                        <div class="">
+
+                        </div>
+                        <div class="">
+                            <div class="uk-child-width-auto uk-flex-center" uk-grid>
+                                <div>
+                                    <a href="" class="system__modal__setting__btn uk-button uk-button-default">Change name</a>
+                                </div>
+                                <div>
+                                    <a href="" class="system__modal__setting__btn uk-button uk-button-default">Credit</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </div>
     </div>
