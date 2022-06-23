@@ -146,11 +146,8 @@
           background-repeat: no-repeat;
           background-position: center;
         }
-        &::-moz-range-thumb{
-          width: 25px;
-          height: 25px;
-          background: #04AA6D;
-          cursor: pointer;
+        &::-ms-thumb{
+          background: #3191A4;
         }
       }
       &__icon{
