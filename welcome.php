@@ -126,7 +126,7 @@
                                             </div>
                                         <?php endif; ?>
                                     </div>
-                                    <div>
+                                    <div class="uk-visible@m">
                                         <div class="uk-text-center welcome__modal__txt1">
                                             <?php if ($i==1): ?>
                                                 World Health Organization. Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control. New Edition 2009. Chapter 1: Epidemiology, Burden of Disease and Transmission. Available from: https://www.ncbi.nlm.nih.gov/books/NBK143157/pdf/Bookshelf_NBK143157.pdf. Accessed on 7th June 2022.  2. World Health Organization (WHO). Dengue and Severe Dengue. Available at: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue
@@ -177,7 +177,116 @@
         </div>
     </div>
 </div>
+
+<div id="modal-welcome-full-mb" class="welcome__modal uk-modal-full uk-padding-remove" uk-modal>
+    <div class="uk-modal-dialog welcome__modal__dialog">
+        <div class="uk-container uk-container-large">
+            <div uk-slider="finite: true;">
+
+                <div class="uk-position-relative">
+
+                    <div class="uk-slider-container uk-light">
+                        <ul class="uk-slider-items uk-child-width-1-1 uk-grid-match" uk-height-viewport="min-height: 300">
+                            <?php for ($i=1;$i<=5;$i++): ?>
+                                <li>
+                                    <div class="uk-section-xsmall uk-position-relative">
+                                        <a href="" class="welcome_mb__btnInfo" data-src="images/welcome_mb_btninfo_Round_BTN.png" uk-img></a>
+                                        <?php if ($i<4): ?>
+                                            <div class="welcome_mb__box1 uk-text-center item__10">
+                                                <div class="uk-position-relative uk-position-z-index"><span class="welcome_mb__box1__txt1 uk-border-pill">about</span></div>
+                                                <div class="welcome_mb__box1__txt2 uk-margin-auto" data-src="images/welcome_mb_pink-ribbons.png" uk-img>dengue fever</div>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if ($i>3): ?>
+                                            <div class="uk-text-center welcome_mb__title">Why this game?</div>
+                                        <?php endif; ?>
+
+                                        <?php if ($i==1): ?>
+                                            <div class="uk-text-center welcome_mb__desc1 item__10">Dengue is the most rapidly spreading mosquito-borne viral disease in the world.1</div>
+                                        <?php endif; ?>
+                                        <?php if ($i==2): ?>
+                                            <div class="uk-text-center welcome_mb__desc1 item__10">Every year dengue causes</div>
+                                        <?php endif; ?>
+                                        <?php if ($i==1): ?>
+                                            <div class="uk-text-center item__12">
+                                                <div class="welcome_mb__slide1" data-src="images/welcome_mb_Frame64.png" uk-img>
+
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if ($i==2): ?>
+                                            <div class="uk-text-center item__9">
+                                                <div class="welcome_mb__slide2" data-src="images/welcome_mb_Vector.png" uk-img>
+
+                                                </div>
+                                            </div>
+                                            <div class="uk-text-center welcome_mb__desc2 item__15">
+                                                In Malaysia, dengue is endemic,3 <br>
+                                                with the <span>highest ever incidence of 131,101 cases</span> reported in 2019.4
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if ($i==3): ?>
+                                            <div class="uk-text-center item__6">
+                                                <div class="welcome_mb__slide3" data-src="images/welcome_mb_Frame-65.png" uk-img>
+
+                                                </div>
+                                            </div>
+                                            <div class="uk-text-center item__19 welcome_mb__desc3">
+                                                CURRENTLY, THERE IS <span>NO SPECIFIC TREATMENT</span> FOR DENGUE FEVER.1
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if ($i==4): ?>
+                                            <div class="uk-text-center item__61">
+                                                <div class="welcome_mb__slide4" data-src="images/welcome_mb_Untitled-1.png" uk-img>
+
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                        <?php if ($i==5): ?>
+                                            <div class="item__17">
+                                                <div class="uk-grid-small" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <div class="welcome_mb__slide5" data-src="images/welcome_mb_blueCircle.png" uk-img>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <p class="welcome_mb__desc2 uk-text-left"><span>TAKEDA is developing our very own dengue vaccine candidate, TAK-003</span>, with the potential to change dengue prevention globally and locally in Malaysia.</p>
+                                                        <p class="welcome_mb__desc2 uk-text-left">TAK-003 has demonstrated <span>overall efficacy against dengue, including against hospitalization</span> both in people, who have or have not previously been exposed to the disease.2</p>
+                                                        <hr>
+                                                        <p class="welcome_mb__descsmall">Disclaimer: TAK-003 is currently not approved for any indication in Malaysia.</p>
+                                                        <p class="welcome_mb__descsmall">This information is available to Takeda staff for information purposes only; it should not be used for diagnosing or treating a health problem or disease. It is not intended to substitute for consultation with a healthcare provider.  Please consult your healthcare provider for further advice.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <?php endif; ?>
+                                    </div>
+                                </li>
+                            <?php endfor; ?>
+                        </ul>
+                    </div>
+
+                    <div class="uk-position-bottom welcome_mb__boxNav">
+                        <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                            <div>
+                                <a class="welcome__modal__slidenav welcome__modal__slidenav--back uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous">Back</a>
+                            </div>
+                            <div>
+                                <ul class="welcome__modal__dots uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-position-center"></ul>
+                            </div>
+                            <div>
+                                <a class="welcome__modal__slidenav welcome__modal__slidenav--next uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next">Next</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
 <script>
-    UIkit.modal('#modal-welcome-full').show();
+    UIkit.modal('#modal-welcome-full-mb').show();
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>

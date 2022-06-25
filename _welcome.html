@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1655805160">
+    <link rel="stylesheet" href="style.css?v=1656174872">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    <script src="js/resloader.js?v=1655805160"></script>
-    <script src="js/app.js?v=1655805160"></script>
+    <script src="js/resloader.js?v=1656174872"></script>
+    <script src="js/app.js?v=1656174872"></script>
 </head>
 <body class="">
 <!--app-->
@@ -38,7 +38,7 @@
     <div id="modal-welcome-full" class="welcome__modal uk-modal-full uk-padding-remove" uk-modal>
         <div class="uk-modal-dialog welcome__modal__dialog">
             <div class="uk-container uk-container-large">
-                <div uk-slider>
+                <div uk-slider="finite: true;">
 
                     <div class="uk-position-relative">
 
@@ -66,7 +66,7 @@
 
 
                                         </div>
-                                        <div>
+                                        <div class="uk-visible@m">
                                             <div class="uk-text-center welcome__modal__txt1">
                                                 World Health Organization. Dengue: Guidelines for Diagnosis, Treatment, Prevention and Control. New Edition 2009. Chapter 1: Epidemiology, Burden of Disease and Transmission. Available from: https://www.ncbi.nlm.nih.gov/books/NBK143157/pdf/Bookshelf_NBK143157.pdf. Accessed on 7th June 2022.  2. World Health Organization (WHO). Dengue and Severe Dengue. Available at: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue
 
@@ -109,7 +109,7 @@
 
 
                                         </div>
-                                        <div>
+                                        <div class="uk-visible@m">
                                             <div class="uk-text-center welcome__modal__txt1">
 
                                                 1. World Health Organization (WHO). Dengue and Severe Dengue. Available at: https://www.who.int/news-room/fact-sheets/detail/dengue-and-severe-dengue 2.Guzman MG, et al. Dengue” a continuing global threat. Nat Rev Microbiol. 2010;8(12 Suppl):S7-S16. 3. Rathakrishnan A, et al. Clinical and immunological carriers of dengue progression in a study cohort from a hyperendemic area in Malaysia. PLoS One.2014;9(3):e92021. 4. Idengue, Statistik Denggi, Bilangan kes dan kadar insiden Demam Denggi 2000-2019.
@@ -144,7 +144,7 @@
 
 
                                         </div>
-                                        <div>
+                                        <div class="uk-visible@m">
                                             <div class="uk-text-center welcome__modal__txt1">
 
 
@@ -179,7 +179,7 @@
                                             </div>
 
                                         </div>
-                                        <div>
+                                        <div class="uk-visible@m">
                                             <div class="uk-text-center welcome__modal__txt1">
 
 
@@ -230,7 +230,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div>
+                                        <div class="uk-visible@m">
                                             <div class="uk-text-center welcome__modal__txt1">
 
 
@@ -264,8 +264,130 @@
             </div>
         </div>
     </div>
+
+    <div id="modal-welcome-full-mb" class="welcome__modal uk-modal-full uk-padding-remove" uk-modal>
+        <div class="uk-modal-dialog welcome__modal__dialog">
+            <div class="uk-container uk-container-large">
+                <div uk-slider="finite: true;">
+
+                    <div class="uk-position-relative">
+
+                        <div class="uk-slider-container uk-light">
+                            <ul class="uk-slider-items uk-child-width-1-1 uk-grid-match" uk-height-viewport="min-height: 300">
+                                <li>
+                                    <div class="uk-section-xsmall uk-position-relative">
+                                        <a href="" class="welcome_mb__btnInfo" data-src="images/welcome_mb_btninfo_Round_BTN.png" uk-img></a>
+                                        <div class="welcome_mb__box1 uk-text-center item__10">
+                                            <div class="uk-position-relative uk-position-z-index"><span class="welcome_mb__box1__txt1 uk-border-pill">about</span></div>
+                                            <div class="welcome_mb__box1__txt2 uk-margin-auto" data-src="images/welcome_mb_pink-ribbons.png" uk-img>dengue fever</div>
+                                        </div>
+
+                                        <div class="uk-text-center welcome_mb__desc1 item__10">Dengue is the most rapidly spreading mosquito-borne viral disease in the world.1</div>
+                                        <div class="uk-text-center item__12">
+                                            <div class="welcome_mb__slide1" data-src="images/welcome_mb_Frame64.png" uk-img>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-section-xsmall uk-position-relative">
+                                        <a href="" class="welcome_mb__btnInfo" data-src="images/welcome_mb_btninfo_Round_BTN.png" uk-img></a>
+                                        <div class="welcome_mb__box1 uk-text-center item__10">
+                                            <div class="uk-position-relative uk-position-z-index"><span class="welcome_mb__box1__txt1 uk-border-pill">about</span></div>
+                                            <div class="welcome_mb__box1__txt2 uk-margin-auto" data-src="images/welcome_mb_pink-ribbons.png" uk-img>dengue fever</div>
+                                        </div>
+
+                                        <div class="uk-text-center welcome_mb__desc1 item__10">Every year dengue causes</div>
+                                        <div class="uk-text-center item__9">
+                                            <div class="welcome_mb__slide2" data-src="images/welcome_mb_Vector.png" uk-img>
+
+                                            </div>
+                                        </div>
+                                        <div class="uk-text-center welcome_mb__desc2 item__15">
+                                            In Malaysia, dengue is endemic,3 <br>
+                                            with the <span>highest ever incidence of 131,101 cases</span> reported in 2019.4
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-section-xsmall uk-position-relative">
+                                        <a href="" class="welcome_mb__btnInfo" data-src="images/welcome_mb_btninfo_Round_BTN.png" uk-img></a>
+                                        <div class="welcome_mb__box1 uk-text-center item__10">
+                                            <div class="uk-position-relative uk-position-z-index"><span class="welcome_mb__box1__txt1 uk-border-pill">about</span></div>
+                                            <div class="welcome_mb__box1__txt2 uk-margin-auto" data-src="images/welcome_mb_pink-ribbons.png" uk-img>dengue fever</div>
+                                        </div>
+
+                                        <div class="uk-text-center item__6">
+                                            <div class="welcome_mb__slide3" data-src="images/welcome_mb_Frame-65.png" uk-img>
+
+                                            </div>
+                                        </div>
+                                        <div class="uk-text-center item__19 welcome_mb__desc3">
+                                            CURRENTLY, THERE IS <span>NO SPECIFIC TREATMENT</span> FOR DENGUE FEVER.1
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-section-xsmall uk-position-relative">
+                                        <a href="" class="welcome_mb__btnInfo" data-src="images/welcome_mb_btninfo_Round_BTN.png" uk-img></a>
+                                        <div class="uk-text-center welcome_mb__title">Why this game?</div>
+
+                                        <div class="uk-text-center item__61">
+                                            <div class="welcome_mb__slide4" data-src="images/welcome_mb_Untitled-1.png" uk-img>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="uk-section-xsmall uk-position-relative">
+                                        <a href="" class="welcome_mb__btnInfo" data-src="images/welcome_mb_btninfo_Round_BTN.png" uk-img></a>
+                                        <div class="uk-text-center welcome_mb__title">Why this game?</div>
+
+                                        <div class="item__17">
+                                            <div class="uk-grid-small" uk-grid>
+                                                <div class="uk-width-auto">
+                                                    <div class="welcome_mb__slide5" data-src="images/welcome_mb_blueCircle.png" uk-img>
+
+                                                    </div>
+                                                </div>
+                                                <div class="uk-width-expand">
+                                                    <p class="welcome_mb__desc2 uk-text-left"><span>TAKEDA is developing our very own dengue vaccine candidate, TAK-003</span>, with the potential to change dengue prevention globally and locally in Malaysia.</p>
+                                                    <p class="welcome_mb__desc2 uk-text-left">TAK-003 has demonstrated <span>overall efficacy against dengue, including against hospitalization</span> both in people, who have or have not previously been exposed to the disease.2</p>
+                                                    <hr>
+                                                    <p class="welcome_mb__descsmall">Disclaimer: TAK-003 is currently not approved for any indication in Malaysia.</p>
+                                                    <p class="welcome_mb__descsmall">This information is available to Takeda staff for information purposes only; it should not be used for diagnosing or treating a health problem or disease. It is not intended to substitute for consultation with a healthcare provider.  Please consult your healthcare provider for further advice.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="uk-position-bottom welcome_mb__boxNav">
+                            <div class="uk-child-width-auto uk-flex-middle" uk-grid>
+                                <div>
+                                    <a class="welcome__modal__slidenav welcome__modal__slidenav--back uk-position-center-left" href="#" uk-slidenav-previous uk-slider-item="previous">Back</a>
+                                </div>
+                                <div>
+                                    <ul class="welcome__modal__dots uk-slider-nav uk-dotnav uk-flex-center uk-margin uk-position-center"></ul>
+                                </div>
+                                <div>
+                                    <a class="welcome__modal__slidenav welcome__modal__slidenav--next uk-position-center-right" href="#" uk-slidenav-next uk-slider-item="next">Next</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script>
-        UIkit.modal('#modal-welcome-full').show();
+        UIkit.modal('#modal-welcome-full-mb').show();
     </script>
 </div>
 <!--/app-->
