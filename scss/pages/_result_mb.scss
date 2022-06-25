@@ -1,3 +1,73 @@
 .result_mb{
+  &__modal{
 
+  }
+  &__victory{
+    &__body{
+      width: 599px;
+      height: 267px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 2;
+    }
+    &__icon{
+      width: 68px;
+      height: 68px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+      display: inline-flex;
+      &:nth-child(n+2){
+        margin-left: 10px;
+      }
+      &--home{
+
+      }
+      &--rank{
+
+      }
+      &--reload{
+
+      }
+    }
+    &__header{
+      width: 220px;
+      height: 55px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      top: -25px;
+      font-family: $font-TrashHand;
+      color: #FFFFFF;
+      font-size: 34px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &__dialog{
+      width: inherit;
+      background: transparent !important;
+      position: relative;
+      $x:125px;
+      &:before,&:after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 283px;
+        height: 375px;
+        display: inline-block;
+        background-repeat: no-repeat;
+      }
+      &:before{
+        width: 271px;
+        left: calc(0px - #{$x});
+        background-image: url("images/festive_result_victory_mb_left.png");
+      }
+      &:after{
+        right: calc(0px - #{$x});
+        background-image: url("images/festive_result_victory_mb_right.png");
+      }
+    }
+  }
 }

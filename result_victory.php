@@ -58,9 +58,22 @@
     </div>
 </div>
 
-<div id="modal-result-victory-mb" class="uk-flex-top" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
-
+<!-- modal result victory mobile -->
+<div id="modal-result-victory-mb" class="uk-flex-top result_mb__modal uk-overflow-hidden" uk-modal>
+    <div class="uk-modal-dialog uk-margin-auto-vertical result_mb__victory__dialog">
+        <div class="uk-position-top-center result_mb__victory__header" data-src="images/result_mb_victory_header.png" uk-img>
+            victory
+        </div>
+        <div class="uk-modal-body result_mb__victory__body uk-flex uk-flex-middle" data-src="images/result_mb_victory_body.png" uk-img>
+            <div class="uk-width-1-1">
+                <div class="uk-text-center">You have won the game!</div>
+            </div>
+        </div>
+        <div class="uk-position-bottom-center" style="z-index: 4;bottom: -20px;">
+            <a href="" class="result_mb__victory__icon result_mb__victory__icon--home" data-src="images/result_mb_Round_BTN-home.png" uk-img></a>
+            <a href="" class="result_mb__victory__icon result_mb__victory__icon--rank" data-src="images/result_mb_Round_BTN-rank.png" uk-img></a>
+            <a href="" class="result_mb__victory__icon result_mb__victory__icon--reload" data-src="images/result_mb_Round_BTN-reload.png" uk-img></a>
+        </div>
     </div>
 </div>
 <script>
