@@ -17,7 +17,7 @@
 </div>
 <!-- This is the modal with the outside close button -->
 <div id="modal-result-victory" class="uk-flex-top result__victory__modal" uk-modal>
-    <div class="uk-modal-dialog uk- uk-margin-auto-vertical uk-text-center uk-position-relative">
+    <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-position-relative">
         <div class="result__victory__modal__bg uk-position-top-center"></div>
         <div class="uk-modal-body uk-margin-auto uk-position-relative uk-position-z-index">
             <div class="uk-position-top-center result__victory__modal__bgheader">
@@ -57,7 +57,13 @@
         </div>
     </div>
 </div>
+
+<div id="modal-result-victory-mb" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+    </div>
+</div>
 <script>
-    UIkit.modal('#modal-result-victory').show();
+    UIkit.modal('#modal-result-victory-mb').show();
 </script>
 <?php require "template-parts/layouts/footer.php"; ?>
