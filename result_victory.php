@@ -66,7 +66,17 @@
         </div>
         <div class="uk-modal-body result_mb__victory__body uk-flex uk-flex-middle" data-src="images/result_mb_victory_body.png" uk-img>
             <div class="uk-width-1-1">
-                <div class="uk-text-center">You have won the game!</div>
+                <div class="uk-text-center result_mb__victory__title">You have won the game!</div>
+                <div uk-grid>
+                    <div class="uk-width-expand">
+
+                    </div>
+                    <div class="uk-width-auto">
+                        <div>Now Justeen has</div>
+                        <div>BETTER PROTECTION</div>
+                        <div>again dengue</div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="uk-position-bottom-center" style="z-index: 4;bottom: -20px;">

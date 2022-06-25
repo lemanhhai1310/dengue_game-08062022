@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
-    <link rel="stylesheet" href="style.css?v=1655797385">
+    <link rel="stylesheet" href="style.css?v=1656156398">
     <!--JS-->
     <script src="https://cdn.jsdelivr.net/npm/@shinsenter/defer.js/dist/defer_plus.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
-    <script src="js/resloader.js?v=1655797385"></script>
-    <script src="js/app.js?v=1655797385"></script>
+    <script src="js/resloader.js?v=1656156398"></script>
+    <script src="js/app.js?v=1656156398"></script>
 </head>
 <body class="">
 <!--app-->
@@ -37,7 +37,7 @@
 </div>
     <!-- This is the modal with the outside close button -->
     <div id="modal-result-victory" class="uk-flex-top result__victory__modal" uk-modal>
-        <div class="uk-modal-dialog uk- uk-margin-auto-vertical uk-text-center uk-position-relative">
+        <div class="uk-modal-dialog uk-margin-auto-vertical uk-text-center uk-position-relative">
             <div class="result__victory__modal__bg uk-position-top-center"></div>
             <div class="uk-modal-body uk-margin-auto uk-position-relative uk-position-z-index">
                 <div class="uk-position-top-center result__victory__modal__bgheader">
@@ -77,8 +77,37 @@
             </div>
         </div>
     </div>
+
+    <!-- modal result victory mobile -->
+    <div id="modal-result-victory-mb" class="uk-flex-top result_mb__modal uk-overflow-hidden" uk-modal>
+        <div class="uk-modal-dialog uk-margin-auto-vertical result_mb__victory__dialog">
+            <div class="uk-position-top-center result_mb__victory__header" data-src="images/result_mb_victory_header.png" uk-img>
+                victory
+            </div>
+            <div class="uk-modal-body result_mb__victory__body uk-flex uk-flex-middle" data-src="images/result_mb_victory_body.png" uk-img>
+                <div class="uk-width-1-1">
+                    <div class="uk-text-center result_mb__victory__title">You have won the game!</div>
+                    <div uk-grid>
+                        <div class="uk-width-expand">
+
+                        </div>
+                        <div class="uk-width-auto">
+                            <div>Now Justeen has</div>
+                            <div>BETTER PROTECTION</div>
+                            <div>again dengue</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-position-bottom-center" style="z-index: 4;bottom: -20px;">
+                <a href="" class="result_mb__victory__icon result_mb__victory__icon--home" data-src="images/result_mb_Round_BTN-home.png" uk-img></a>
+                <a href="" class="result_mb__victory__icon result_mb__victory__icon--rank" data-src="images/result_mb_Round_BTN-rank.png" uk-img></a>
+                <a href="" class="result_mb__victory__icon result_mb__victory__icon--reload" data-src="images/result_mb_Round_BTN-reload.png" uk-img></a>
+            </div>
+        </div>
+    </div>
     <script>
-        UIkit.modal('#modal-result-victory').show();
+        UIkit.modal('#modal-result-victory-mb').show();
     </script>
 </div>
 <!--/app-->
